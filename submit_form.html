@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Basketball Youth Development Program</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="c:\Users\Acer\Downloads\banner.jpg" alt="Program Logo" class="navbar-logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="program-details.html">Program Details</a></li>
+                <li><a href="coaches.html">Coaches</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, need more information, or would like to get involved with the Basketball Youth Development Program, please reach out to us using the contact details below or fill out the contact form.</p>
+
+        <h3>Contact Information</h3>
+        <ul>
+            <li><strong>Email:</strong> Kurt@basketballyouthdevelopment.org</li>
+            <li><strong>Phone:</strong> 09687902842</li>
+            <li><strong>Address:</strong> Bagong Silang, Caloocan City</li>
+        </ul>
+
+        <h3>Partnership Inquiries</h3>
+        <p>We are always looking to collaborate with schools, social services, and sports organizations to expand our reach and provide more opportunities to young athletes. If your organization is interested in partnering with us, please contact us at <a href="mailto:partnerships@basketballyouthdevelopment.org">Kurt Partnerships@basketballyouthdevelopment.org</a>.</p>
+
+        <h3>Contact Form</h3>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="confirmationMessage" style="display:none;">
+            <p>Thank you for your message! We will get back to you soon.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Basketball Youth Development Program</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('contactForm').style.display = 'none';
+            document.getElementById('confirmationMessage').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
